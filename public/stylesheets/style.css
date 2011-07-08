@@ -178,13 +178,8 @@ overflow: hidden;
 	position: fixed;
 	width: 265px;
 	height: 100%;
-<<<<<<< HEAD
-	/*background: url(../images/black_sidebar_01.png) repeat-y;*/
-=======
 	z-index: 1;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 }
-
 	#sidebar img {
 		position: relative;
 		top: 40px;
@@ -198,10 +193,6 @@ nav {
 	color: white;
 	line-height: 2;
 	padding-left: 20px;
-<<<<<<< HEAD
-	/*background: url(../images/grid_pattern_03.png) repeat-y;*/
-=======
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 	position: relative;
 	top: 45px;
 	font-size: 24px;
@@ -237,10 +228,6 @@ nav {
 				.current {
 					background: #e30808;
 					box-shadow: 0 2px 4px #c5c5c6;
-<<<<<<< HEAD
-					/*background: url(../images/nav_hover_03.png) no-repeat;*/
-=======
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 					width: 197px;
 					height: 39px;
 					z-index: 1;
@@ -306,11 +293,7 @@ nav {
 /* ----- End of Navigation CSS ------ */
 
 .section {
-<<<<<<< HEAD
-	padding-bottom: 1000px;
-=======
 	padding-bottom: 700px;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 	padding-left: 250px;
 	padding-top: 150px;
 }
@@ -318,7 +301,7 @@ nav {
 img {
 	max-width: 100%;
 }
-<<<<<<< HEAD
+
 
 		
 /* Question Section CSS */
@@ -519,12 +502,8 @@ img {
 
 #wanted {
 	height: 800px;
-<<<<<<< HEAD
-	margin-top: -100px;
-=======
 	margin-top: -75px;
 	margin-bottom: -50px;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 }
 
 	#wanted h2 {
@@ -553,25 +532,18 @@ img {
                             
 /* Start Skills Section CSS */
 
-<<<<<<< HEAD
-#skills {
-	height: 800px;
-	margin-top: -100px;
-=======
 
 #skills {
 	height: 800px;
 	margin-top: -144px;
 	position: relative;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 }
 
 	img#title {
 		margin-bottom: 45px;
 		
 	}
-<<<<<<< HEAD
-=======
+
 	
 	#skills h1 {
 		font-size: 40px;
@@ -580,16 +552,14 @@ img {
 		margin-top: -8px;
 		text-shadow: 0 1px 0 #FFFFFF, 0 2px 0 #EEEEEE, 0 3px 0 #DDDDDD, 0 4px 0 #CCCCCC;
 	}
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
+
 
 	#skills h2 {
 		font-family: Helvetica Condensed, Helvetica, sans-serif;
 		font-weight: bold;
 		font-size: 32px;
-<<<<<<< HEAD
-=======
+
 		text-shadow: 0 1px 0 #FFFFFF, 0 2px 0 #EEEEEE, 0 3px 0 #DDDDDD, 0 4px 0 #CCCCCC;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 	}
 	
 	#skills ul {
@@ -598,13 +568,7 @@ img {
 	}
 	
 	#skills li {
-<<<<<<< HEAD
-		font-size: 24px;
-		line-height: 1.5;
-		position: relative;
-		left: 35px;
-		margin-left: 10px;
-=======
+
 		background: url("../images/red_hashrocket_03.png") no-repeat scroll -6px 50% transparent;
 		font-size: 32px;
 		left: 2px;
@@ -619,7 +583,7 @@ img {
 		font-weight: lighter;
 		text-shadow: 0 1px 2px #036EA4;
 		
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
+
 	}
 	
 	#dev-skills img, #soft-skills img {
@@ -636,27 +600,16 @@ img {
 /* Start Eligibility Section CSS */
 
 #eligibility {
-<<<<<<< HEAD
-	height: 400px;
-	margin-top: -100px;
-	margin-bottom: -100px;
-=======
 	height: 800px;
 	margin-top: -100px;
 	margin-bottom: -214px;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 }
 
 	#eligibility h1 {
 		font-size: 40px;
-<<<<<<< HEAD
-		    font-weight: bold;
-		    text-shadow: 3px 2px 2px white;
-=======
 		font-weight: bold;
 		text-shadow: 0 1px 0 #FFFFFF, 0 2px 0 #EEEEEE, 0 3px 0 #DDDDDD, 0 4px 0 #CCCCCC;
 		margin-top: 45px;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 		
 	}
 	
@@ -664,10 +617,9 @@ img {
 		font-weight: bold;
 		font-size: 32px;
 		margin-top: 50px;
-<<<<<<< HEAD
-=======
+
 		text-shadow: 0 1px 0 #FFFFFF, 0 2px 0 #EEEEEE, 0 3px 0 #DDDDDD, 0 4px 0 #CCCCCC;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
+
 	}
 	
 	#eligibility p {
@@ -680,11 +632,8 @@ img {
 	}
 	
 		h2#passion {
-<<<<<<< HEAD
-			margin-top: 50px;
-=======
 			margin-top: 75px;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
+
 		}
 
 /* End Eligibility Section CSS */
@@ -694,12 +643,8 @@ img {
 
 #crew {
 	height: 800px;
-<<<<<<< HEAD
-	margin-top: -150px;
-=======
 	    margin-bottom: 185px;
 	    margin-top: -161px;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 }
 
 	#crew h2 {
@@ -707,7 +652,7 @@ img {
 		font-weight: bold;
 		font-size: 32px;
 		margin-top: 50px;
-<<<<<<< HEAD
+
 	}
 	
 		ul#mentor-list, #partner-list, #staff-list {
@@ -716,7 +661,7 @@ img {
 			position: relative;
 			letter-spacing: 1px;
 			text-shadow: 0 1px 2px #036EA4;
-=======
+
 		text-shadow: 0 1px 0 #FFFFFF, 0 2px 0 #EEEEEE, 0 3px 0 #DDDDDD, 0 4px 0 #CCCCCC;
 	}
 	
@@ -731,7 +676,6 @@ img {
 		
 		#crew-title {
 			padding-top: 15px;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 		}
 
 /* End Crew Section CSS */
@@ -754,14 +698,6 @@ img {
 
 	#apply tweet {
 		color: #036EA4;
-<<<<<<< HEAD
-		font-size: 24px;
-		line-height: 1.5;
-		padding: 10px;
-		position: relative;
-		top: 10px;
-	}
-=======
 		font-size: 32px;
 		line-height: 1.5;
 		padding-left: 0px;
@@ -773,7 +709,6 @@ img {
 		position: relative;
 		padding-top: 15px;
 	}
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 
 /* End Apply Section CSS */
 
@@ -860,10 +795,8 @@ img {
 	color:white;
 	overflow:hidden;
 	height:22px;
-<<<<<<< HEAD
-=======
 	display: none;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
+
 }
 
 .slideOutTip:hover{
@@ -871,18 +804,18 @@ img {
 	-moz-box-shadow:0 0 1px #999;
 	-webkit-box-shadow:0 0 1px #999;
 	box-shadow:0 0 1px #999;
-<<<<<<< HEAD
+
 }
 
 /* The holder for the title and the icon: */
 .tipVisible{ cursor:pointer; height:22px; }
-=======
+
 	display: none;
 }
 
 /* The holder for the title and the icon: */
 .tipVisible{ cursor:pointer; height:22px; display: none;}
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
+
 
 .tipTitle{
 	float:left;
@@ -892,10 +825,8 @@ img {
 	white-space:nowrap;
 	line-height:22px;
 	padding-right:5px;
-<<<<<<< HEAD
-=======
 	display: none;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
+
 }
 
 .tipIcon{
@@ -905,10 +836,7 @@ img {
 	background-color:#61b035;
 	border:1px solid #70c244;
 	margin-right:8px;
-<<<<<<< HEAD
-=======
 	display: none;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 	
 	/* CSS3 Rounded corners */
 	
@@ -926,14 +854,12 @@ img {
 	/* The plus icon */
 	width:13px;
 	height:13px;
-<<<<<<< HEAD
+
 	background:url('img/plus.gif') no-repeat center center;
 	margin:4px;
-=======
 	background: url(../images/img/plus.gif) no-repeat center center;
 	margin:4px;
 	display: none;
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
 	
 	/* Defining a CSS3 animation. Currently only works in Chrome and Safari */
 	-webkit-transition: -webkit-transform 0.2s linear;
@@ -956,18 +882,16 @@ img {
 	/* Floating the title and the icon to the right */
 	margin:0 0 0 8px;
 	float:right;
-<<<<<<< HEAD
 }
 .openLeft .tipTitle{ float:right; padding:0 0 0 5px; }
 .openLeft .slideOutContent{ margin-top:22px; }
-.openLeft.openTop .slideOutContent{	margin-top:0; }
-=======
-	display: none;
+.openLeft.openTop .slideOutContent{	margin-top:0;
+display: none;
 }
 .openLeft .tipTitle{ float:right; padding:0 0 0 5px; display: none; }
 .openLeft .slideOutContent{ margin-top:22px; display: none; }
 .openLeft.openTop .slideOutContent{	margin-top:0; display: none;}
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
+
 
 
 .slideOutContent{
@@ -988,7 +912,7 @@ img {
 
 /* End Slideout CSS*/
 
-<<<<<<< HEAD
+
 /* Start Flipwall CSS */
 
 .sponsorListHolder{
@@ -1060,7 +984,7 @@ img {
 }
 
 /* End Flipwall CSS*/
-=======
+
 /* Start toggle CSS */
 
 .toggle {
@@ -1073,4 +997,4 @@ img {
 }
 
 /* End Toggle CSS */
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c
+
