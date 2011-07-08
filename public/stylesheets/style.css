@@ -79,7 +79,7 @@ html {
 }
 
 body {
-	background: url(../images/code_bg.png) repeat #deddd8;
+	background: url(../images/subtle_pattern.png) repeat #deddd8;
 	font-family: Helvetica Neue, Helvetica-Neue, Helvetica,Arial,sans-serif;
 	font-size: 20px;
 	font-weight: lighter;
@@ -194,7 +194,6 @@ nav {
 	color: white;
 	line-height: 2;
 	padding-left: 20px;
-	/*background: url(../images/grid_pattern_03.png) repeat-y;*/
 	position: relative;
 	top: 45px;
 	font-size: 24px;
@@ -230,7 +229,6 @@ nav {
 				.current {
 					background: #e30808;
 					box-shadow: 0 2px 4px #c5c5c6;
-					/*background: url(../images/nav_hover_03.png) no-repeat;*/
 					width: 197px;
 					height: 39px;
 					z-index: 1;
