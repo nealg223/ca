@@ -1,0 +1,888 @@
+/*
+@font-face {
+	font-family: Vitesse;
+	font-weight: bold;
+	src: url('fonts/Vitesse-Bold.otf');
+}
+
+*/
+
+/*
+
+@font-face {
+    font-family: 'Variable Regular';
+    src: url('../fonts/variable_regular-webfont.eot');
+    src: url('../fonts/variable_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/variable_regular-webfont.woff') format('woff'),
+         url('../fonts/variable_regular-webfont.ttf') format('truetype'),
+         url('../fonts/variable_regular-webfont.svg#VariableRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-variant: normal;
+
+}
+
+@font-face {
+    font-family: 'VariableLtLight';
+    src: url('../fonts/variable_light-webfont.eot');
+    src: url('../fonts/variable_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/variable_light-webfont.woff') format('woff'),
+         url('../fonts/variable_light-webfont.ttf') format('truetype'),
+         url('../fonts/variable_light-webfont.svg#VariableLtLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'VariableBold';
+    src: url('../fonts/variable_bold-webfont.eot');
+    src: url('../fonts/variable_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/variable_bold-webfont.woff') format('woff'),
+         url('../fonts/variable_bold-webfont.ttf') format('truetype'),
+         url('../fonts/variable_bold-webfont.svg#VariableBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* 
+@font-face {
+    font-family: 'Hattori-Hanzo-Light';
+    src: url('public/fonts/Hattori_Hanzo-webfont.eot');
+	src: local('☺'),
+    src: url('public/fonts/Hattori_Hanzo-webfont.woff') format('woff'),
+         url('public/fonts/Hattori_Hanzo-webfont.ttf') format('truetype'),
+         url('public/fonts/Hattori_Hanzo-webfont.svg#HattoriHanzoLight') format('svg');
+    	font-weight:normal;
+		      font-style:normal;
+		      font-variant:normal;
+
+}
+
+@font-face {
+    font-family: 'HattoriHanzoLightItalic';
+    src: url('public/fonts/Hattori_Hanzo_Italic-webfont.eot');
+	src: local('☺'),
+    src: url('public/fonts/Hattori_Hanzo_Italic-webfont.woff') format('woff'),
+         url('public/fonts/Hattori_Hanzo_Italic-webfont.ttf') format('truetype'),
+         url('public/fonts/Hattori_Hanzo_Italic-webfont.svg#HattoriHanzoLightItalic') format('svg');
+   		font-weight:normal;
+		      font-style:normal;
+		      font-variant:normal;
+}
+
+*/
+html {
+/*	overflow-y: auto;
+*/	background-color: transparent;
+}
+
+body {
+	background: url(../images/code_bg.png) repeat #deddd8;
+	font-family: Helvetica Neue, Helvetica-Neue, Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+	position: relative;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 10px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/* --- This is your entire scrollbar unit. Webkit-scrollbar accepts width and height for the scrollbar. 
+
+::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+
+/* --- This is your entire scrollbar unit. Webkit-scrollbar accepts width and height for the scrollbar.
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+height: 60px;
+display: block;
+background-color: transparent;
+}
+
+/* --- This is the little button at the start and end of the scrollbar. You can style this as you would any other object. 
+
+::-webkit-scrollbar-track-piece  {
+background-color: #b6b5b5;
+-webkit-border-radius: 6px;
+width: 5px;
+}
+
+/* --- This is the thin background upon which your scrollbar moves in. The gutter. 
+
+::-webkit-scrollbar-thumb:vertical {
+height: 20px;
+background-color: white;
+border: 1px solid #eee;
+-webkit-border-radius: 6px;
+}
+
+--- */
+
+h1 {
+	font-size: 32px;
+	line-height: 40px;
+	margin-bottom: 18px;
+	margin-top: 10px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 18px;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 36px;
+	margin-bottom: 18px;
+}
+
+p {
+	font-family: Helvetica-Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-shadow: 0 1px 2px #036EA4;
+}
+
+ul, ol {
+	margin-bottom: 18px;
+}
+
+.container {
+padding-right: 20px;
+height: 5000px;
+}
+
+.row {
+width: 100%;
+max-width: 1140px;
+min-width: 755px;
+margin: 0 auto;
+overflow: hidden;
+}
+
+#sidebar {
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 265px;
+	height: 100%;
+	z-index: 1;
+}
+
+	#sidebar img {
+		position: relative;
+		top: 40px;
+		left: 32px;
+	}
+	
+/* ----- Navigation CSS ------ */
+
+
+nav {
+	color: white;
+	line-height: 2;
+	padding-left: 20px;
+	/*background: url(../images/grid_pattern_03.png) repeat-y;*/
+	position: relative;
+	top: 45px;
+	font-size: 24px;
+}
+
+	nav li {
+		position: relative;
+		top: 50px;
+		list-style-type: none;
+		text-transform: uppercase;
+	}
+
+		nav li a {
+			font-family: Helvetica, sans-serif;
+			text-decoration: none;
+			color: white;
+			text-shadow: 1px 1px 2px #000;
+			font-weight: bold;
+			padding-left: 10px;
+			padding-right: 55px;
+			padding-top: 3px;
+			background: #464444;
+		}
+		
+			nav li a:hover {
+				background: #036ea4;
+			}
+			
+			nav li a#first, a#second, a#third, a#fourth, a#fifth, a#sixth, a#seventh  {
+				text-shadow: 1px 1px 2px rgba(10, 89, 208, .5);	
+			}
+			
+				.current {
+					background: #e30808;
+					box-shadow: 0 2px 4px #c5c5c6;
+					/*background: url(../images/nav_hover_03.png) no-repeat;*/
+					width: 197px;
+					height: 39px;
+					z-index: 1;
+				}
+				
+				nav li a#first {
+					padding-left: 30px;
+					padding-right: 82px;
+					padding-top: 9px;
+					padding-bottom: 2px;
+					margin-left: -20px;
+				}
+				
+				nav li a#second {
+					padding-left: 30px;
+					padding-right: 100px;
+					padding-top: 9px;
+					padding-bottom: 2px;
+					margin-left: -20px;
+				}
+				
+				nav li a#third {
+					padding-left: 30px;
+					padding-right: 45px;
+					padding-top: 9px;
+					padding-bottom: 2px;
+					margin-left: -20px;
+				}
+				
+				nav li a#fourth {
+					padding-left: 32px;
+					padding-right: 111px;
+					padding-top: 9px;
+					padding-bottom: 2px;
+					margin-left: -23px;
+				}
+				
+				nav li a#fifth {
+					padding-left: 30px;
+					padding-right: 35px;
+					padding-top: 9px;
+					padding-bottom: 2px;
+					margin-left: -20px;
+				}
+				
+				nav li a#sixth {
+					padding-left: 35px;
+					padding-right: 103px;
+					padding-top: 9px;
+					padding-bottom: 2px;
+					margin-left: -24px;
+				}
+				
+				nav li a#seventh {
+					padding-left: 33px;
+					padding-right: 143px;
+					padding-top: 9px;
+					padding-bottom: 2px;
+					margin-left: -24px;
+				}
+	
+				
+/* ----- End of Navigation CSS ------ */
+
+.section {
+	padding-bottom: 700px;
+	padding-left: 250px;
+	padding-top: 150px;
+}
+
+img {
+	max-width: 100%;
+}
+/*
+.shadow {
+  -moz-box-shadow: 2px 3px 7px #CCCCCC;
+  -webkit-box-shadow: 2px 3px 7px #CCCCCC;
+  box-shadow: 2px 3px 7px #CCCCCC;
+}
+
+*/		
+/* Question Section CSS 
+
+#question {
+	padding-top: 100px;
+	text-align: center;
+	
+}
+
+	#question img {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	
+	#choices {
+		margin: 0 auto;
+		position: relative;
+		right: 50px;
+	}
+	
+	#circle, #circle-2 {
+		width:200px;
+		height:200px;
+		display:block;
+		border-radius:100px;
+		-moz-border-radius:100px;
+		-webkit-border-radius:100px;
+		font-size:55px;
+		font-family: Vitesse;
+		font-weight: bold;
+		color:#fff;
+		line-height:200px;
+		text-align:center;
+		text-shadow: 1px 2px 2px #000;
+		text-transform: uppercase;
+	}
+
+	
+	#circle {
+		background:	rgb(69, 18, 237);
+		position: relative;
+		left: 220px;
+		text-decoration: none;
+		top: 50px;
+	}
+	
+		#circle a:hover {
+			background: rgb(12, 36, 122);
+		}
+	
+	#circle-2 {
+		background: rgb(214, 12, 43);
+		left: 550px;
+		position: relative;
+		text-decoration: none;
+		bottom: 153px;
+	}
+		#circle-2 a:hover {
+			background: rgb(183, 12, 43);
+		}
+
+
+			#choices a {
+			text-decoration: none;
+				-webkit-transition: all 1s ease-in-out;
+				-moz-transition: all .5s ease-in-out;
+				-o-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				transition: all 1s ease-in-out;
+				}
+				
+		
+				#choices a:hover {
+					font-size: 60px;
+				}
+		
+		
+		/* For Demo Purposes Only
+
+		#cf2 {
+				position:relative;
+				height:281px;
+				width:450px;
+				margin:0 auto;
+			}
+
+		#cf2 img {
+				position:absolute;
+				left:0;
+				-webkit-transition: opacity 1s ease-in-out;
+				-moz-transition: opacity 1s ease-in-out;
+				-o-transition: opacity 1s ease-in-out;
+				-ms-transition: opacity 1s ease-in-out;	
+				transition: opacity 1s ease-in-out;
+			}
+
+		#cf2 img.transparent {
+				opacity:0;
+		}
+
+		#cf_onclick {
+				cursor:pointer;
+		}
+
+		/* End of Demo */
+
+		/*
+
+		#choices-yes {
+				width: 250px;
+				position: relative;
+				top: 50px;
+				margin: 0 auto;
+				right: 164px;
+		}
+		/*
+				#choices-yes:hover {
+					background: url(../images/yes_arrow_03.png) no-repeat;
+				}
+
+				#choices-yes img.top:hover {
+					opacity: 0;
+				}
+
+
+			/* 
+
+				#choices-yes img {
+					position:absolute;
+					left:0;
+					-webkit-transition: opacity 1s ease-in-out;
+					-moz-transition: opacity 1s ease-in-out;
+					-o-transition: opacity 1s ease-in-out;
+					-ms-transition: opacity 1s ease-in-out;	
+					transition: opacity 1s ease-in-out;
+				}
+
+
+
+
+
+
+				#choices-yes img.transparent {
+					opacity:0;
+				}
+
+				#choices-yes_onclick {
+					cursor: pointer;
+				}
+
+		*/
+
+		/*
+
+			#choices-yes a:hover {
+				/*background: url(../images/yes_arrow_03.png) no-repeat;
+				height: 1300px;
+				position: relative;
+				bottom: 200px;
+				left: 5px;
+			}
+
+		*/
+
+
+		/*
+
+			#choices-no {
+				width: 300px;
+				position: relative;
+				top: -126px;
+				margin: 0 auto;		
+			}
+
+	
+	#choices-yes a:hover, #choices-no a:hover {
+			font-size: 60px;
+		}
+
+*/
+
+
+/* End Question Section CSS */
+
+/* Start Wanted Section CSS */
+
+#wanted {
+	height: 800px;
+	margin-top: -75px;
+	margin-bottom: -50px;
+}
+
+	#wanted h2 {
+		text-align: center;
+	}
+	
+	#wanted iframe {
+		
+		margin: 19px auto;
+		    position: relative;
+		    width: 100%;
+	}
+	
+	#wanted img {
+		position: relative;
+		margin: 0 auto;
+	}
+	
+	#wanted img#ad {
+		left: 170px;
+		top: 17px;
+	}
+
+/* End Wanted Section CSS */
+
+                            
+/* Start Skills Section CSS */
+
+
+#skills {
+	height: 800px;
+	margin-top: -144px;
+	position: relative;
+}
+
+	img#title {
+		margin-bottom: 45px;
+		
+	}
+	
+	#skills h1 {
+		font-size: 40px;
+		font-weight: bold;
+		margin-bottom: 67px;
+		margin-top: -8px;
+		text-shadow: 0 1px 0 #FFFFFF, 0 2px 0 #EEEEEE, 0 3px 0 #DDDDDD, 0 4px 0 #CCCCCC;
+	}
+
+	#skills h2 {
+		font-family: Helvetica Condensed, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 32px;
+		text-shadow: 0 1px 0 #FFFFFF, 0 2px 0 #EEEEEE, 0 3px 0 #DDDDDD, 0 4px 0 #CCCCCC;
+	}
+	
+	#skills ul {
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+	
+	#skills li {
+		background: url("../images/red_hashrocket_03.png") no-repeat scroll -6px 50% transparent;
+		font-size: 32px;
+		left: 2px;
+		letter-spacing: 1px;
+		line-height: 1.5;
+		margin-bottom: 18px;
+		margin-left: 0;
+		padding-left: 39px;
+		position: relative;
+		top: -7px;
+		font-family: Helvetica-Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-weight: lighter;
+		text-shadow: 0 1px 2px #036EA4;
+		
+	}
+	
+	#dev-skills img, #soft-skills img {
+		position: relative;
+		top: -35px;
+	}
+	
+
+	
+
+/* --- End Skills Section CSS ----- */
+
+
+/* Start Eligibility Section CSS */
+
+#eligibility {
+	height: 800px;
+	margin-top: -100px;
+	margin-bottom: -214px;
+}
+
+	#eligibility h1 {
+		font-size: 40px;
+		font-weight: bold;
+		text-shadow: 0 1px 0 #FFFFFF, 0 2px 0 #EEEEEE, 0 3px 0 #DDDDDD, 0 4px 0 #CCCCCC;
+		margin-top: 45px;
+		
+	}
+	
+	#eligibility h2 {
+		font-weight: bold;
+		font-size: 32px;
+		margin-top: 50px;
+		text-shadow: 0 1px 0 #FFFFFF, 0 2px 0 #EEEEEE, 0 3px 0 #DDDDDD, 0 4px 0 #CCCCCC;
+	}
+	
+	#eligibility p {
+		font-family: Helvetica-Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-weight: lighter;
+		font-size: 24px;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		text-shadow: 0 1px 2px #036EA4;
+	}
+	
+		h2#passion {
+			margin-top: 75px;
+		}
+
+/* End Eligibility Section CSS */
+
+
+/* Start Crew Section CSS */
+
+#crew {
+	height: 800px;
+	    margin-bottom: 185px;
+	    margin-top: -161px;
+}
+
+	#crew h2 {
+		font-family: Helvetica Condensed, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 32px;
+		margin-top: 50px;
+		text-shadow: 0 1px 0 #FFFFFF, 0 2px 0 #EEEEEE, 0 3px 0 #DDDDDD, 0 4px 0 #CCCCCC;
+	}
+	
+		ul#mentor-list, #partner-list, #staff-list {
+			font-family: Helvetica-Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-shadow: 0 1px 2px #036EA4;
+		}
+		
+		#crew-title {
+			padding-top: 15px;
+		}
+
+/* End Crew Section CSS */
+
+
+
+/* Start Community Section CSS */
+
+#community {
+	
+}
+
+/* End Community Section CSS */
+
+/* Start Apply Section CSS */
+
+#apply {
+	
+}
+
+	#apply tweet {
+		color: #036EA4;
+		font-size: 32px;
+		line-height: 1.5;
+		padding-left: 0px;
+		position: relative;
+		top: 10px;
+	}
+	
+	img#tweet-title {
+		position: relative;
+		padding-top: 15px;
+	}
+
+/* End Apply Section CSS */
+
+/* Start Slideshow CSS */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+#slideshow{
+	background-color:#F5F5F5;
+	border:1px solid #FFFFFF;
+	height:340px;
+	margin:150px auto 0;
+	position:relative;
+	width:640px;
+	
+	-moz-box-shadow:0 0 22px #111;
+	-webkit-box-shadow:0 0 22px #111;
+	box-shadow:0 0 22px #111;
+}
+
+#slideshow ul{
+	height:320px;
+	left:10px;
+	list-style:none outside none;
+	overflow:hidden;
+	position:absolute;
+	top:10px;
+	width:620px;
+}
+
+#slideshow li{
+	position:absolute;
+	display:none;
+	z-index:10;
+}
+
+#slideshow li:first-child{
+	display:block;
+	z-index:1000;
+}
+
+#slideshow .slideActive{
+	z-index:1000;
+}
+
+#slideshow canvas{
+	display:none;
+	position:absolute;
+	z-index:100;
+}
+
+#slideshow .arrow{
+	height:86px;
+	width:60px;
+	position:absolute;
+	background: url(../images/arrows.png) no-repeat;
+	top:50%;
+	margin-top:-43px;
+	cursor:pointer;
+	z-index:5000;
+}
+
+#slideshow .previous{ background-position:left top;left:0;}
+#slideshow .previous:hover{ background-position:left bottom;}
+
+#slideshow .next{ background-position:right top;right:0;}
+#slideshow .next:hover{ background-position:right bottom;}
+
+/* End Slideshow CSS */
+
+/* Start Slideout CSS */
+
+.slideOutTip{
+	/* The main wrapping div of the slideout tips */
+	position: absolute;
+	padding:3px;
+	top:0;
+	left:0;
+	background-color:#111;
+	font-size:13px;
+	color:white;
+	overflow:hidden;
+	height:22px;
+	display: none;
+}
+
+.slideOutTip:hover{
+	/* Applying a CSS3 outer glow on hover */
+	-moz-box-shadow:0 0 1px #999;
+	-webkit-box-shadow:0 0 1px #999;
+	box-shadow:0 0 1px #999;
+	display: none;
+}
+
+/* The holder for the title and the icon: */
+.tipVisible{ cursor:pointer; height:22px; display: none;}
+
+.tipTitle{
+	float:left;
+	font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	white-space:nowrap;
+	line-height:22px;
+	padding-right:5px;
+	display: none;
+}
+
+.tipIcon{
+	width:20px;
+	height:20px;
+	float:left;
+	background-color:#61b035;
+	border:1px solid #70c244;
+	margin-right:8px;
+	display: none;
+	
+	/* CSS3 Rounded corners */
+	
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+}
+
+/* Three color themes */
+.green .tipIcon{ background-color:#61b035; border:1px solid #70c244; }
+.blue .tipIcon{ background-color:#1078C7; border:1px solid #1e82cd; }
+.red .tipIcon{ background-color:#CD3A12; border:1px solid #da421a; }
+
+.plusIcon{
+	/* The plus icon */
+	width:13px;
+	height:13px;
+	background: url(../images/img/plus.gif) no-repeat center center;
+	margin:4px;
+	display: none;
+	
+	/* Defining a CSS3 animation. Currently only works in Chrome and Safari */
+	-webkit-transition: -webkit-transform 0.2s linear;
+	-moz-transition: -moz-transform 0.2s linear;
+	transition: transform 0.2s linear;
+}
+
+.slideOutTip.isOpened{ z-index:10000; }
+
+.slideOutTip.isOpened .plusIcon{
+	/* Applying a CSS3 rotation  to the opened slideouts*/
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+
+/* Special rules for the left and top - opening versions */
+
+.openLeft .tipIcon{
+	/* Floating the title and the icon to the right */
+	margin:0 0 0 8px;
+	float:right;
+	display: none;
+}
+.openLeft .tipTitle{ float:right; padding:0 0 0 5px; display: none; }
+.openLeft .slideOutContent{ margin-top:22px; display: none; }
+.openLeft.openTop .slideOutContent{	margin-top:0; display: none;}
+
+
+.slideOutContent{
+	/* Hiding the div with the slide out content: */
+	display:none;
+	padding:10px;
+	font-size:11px;
+}
+
+/* Hiding the original paragraphs if they have not been replaced (JS disabled): */
+
+/*.slideout{
+  position: relative;
+  bottom: 200px;
+}*/
+
+.slideout > p{ display:none; }
+
+/* End Slideout CSS*/
+
+/* Start toggle CSS */
+
+.toggle {
+/*  color: #44c1cf;
+  font-size: 17px;
+  font-family: myFont;*/
+}
+
+.showable {
+}
+
+/* End Toggle CSS */

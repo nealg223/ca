@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %link{:href => "http://fonts.googleapis.com/css?family=Play&v1", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=VT323&v1", :rel => "stylesheet", :type => "text/css"}
+    
+    %title= title
+    = csrf_meta_tag
+    = render 'layouts/stylesheets'
+    = javascript_include_tag "jquery.min.js", "application.js", "script.js", "autoadvance.js", "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", :defaults
+  %body
+    = render 'layouts/nav'
+    .container
+      / = yield
+      = render 'layouts/wanted'
+      = render 'layouts/skills'
+      = render 'layouts/eligibility'
+      = render 'layouts/crew'
+      = render 'layouts/community'
+      = render 'layouts/apply'
+      / = render 'layouts/quotes'
+      = render 'layouts/slideouts'
+  = render 'layouts/analytics'
+

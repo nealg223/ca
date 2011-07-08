@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if [[ -s "/Users/flashmanproductions1/.rvm/environments/ruby-1.9.2-p180" ]]
+then
+  source "/Users/flashmanproductions1/.rvm/environments/ruby-1.9.2-p180"
+  exec rdoc "$@"
+else
+  echo "ERROR: Missing RVM environment file: '/Users/flashmanproductions1/.rvm/environments/ruby-1.9.2-p180'" >&2
+  exit 1
+fi
+  
