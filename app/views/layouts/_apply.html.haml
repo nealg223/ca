@@ -1,28 +1,22 @@
 .row
   #apply.section
-    %img{:alt => "Apply", :src => "images/appply_title_03.png"}/
+    %img{:alt => "Apply", :src => "images/apply_title_03.png"}/
+    
+    / - sponsors.each do |sponsor|
+    /   .sponsor{:title => "Click to flip"}
+    /     .sponsorFlip
+    /       = image_tag "sponsors/#{sponsor[:name]}.png"
+    /     .sponsorData
+    /       .sponsorDescription
+    /         = sponsor[:description]
+    /       .sponsorURL
+    /         = link_to sponsor[:url], sponsor[:url]
     %p
+    
     Apply
-    Take the leap.
-    Go for it. 
-    Jump.
-    "I think the Force is in you. Force yourself." 
-    No excuses. 
-    Talk does not cook rice. It's time to code. 
-    A journey of a thousand miles must begin with a single step
-    Start here. 
-    Unlock your potential.
-    Time to get serious.
-    Don't think. Do.
-    Do you qualify? 
-    Are you who we want? 
-    Are you a builder? 
-    "I am a builder."
-    Join the makers movement. 
+
     Join the builders movement. 
-    Life is short.
-
-
+    
     Submit 
     
     Application will be released August 1.  Submit your information below to be the first to apply. 
@@ -48,7 +42,7 @@
     #slideshow
       %ul.slides
         %li
-          %img{:alt => "Marsa Alam underawter close up", :height => "320", :src => "images/photos/1.jpg", :width => "620"}/
+          %img{:alt => "Marsa Alam underwater close up", :height => "320", :src => "images/photos/1.jpg", :width => "620"}/
         %li
           %img{:alt => "Turrimetta Beach - Dawn", :height => "320", :src => "images/photos/2.jpg", :width => "620"}/
         %li
