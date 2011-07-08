@@ -78,6 +78,7 @@ $(document).ready(function() {
 		//    }
 	});
 });
+<<<<<<< HEAD
 	
 	$(document).ready(function() {
 		$("#cf_onclick").click(function() {
@@ -134,3 +135,17 @@ $(document).ready(function() {
   	});
 
   });
+=======
+
+$(document).ready(function() {
+
+$('.showable').hide();
+
+$('.toggle').click(function() {
+var element = ("#showable-" + $(this).data("target"));
+  $(element).toggle('normal');
+  return false;
+});
+
+});
+>>>>>>> 373fab6a703446922259cce2900ab30e6896317c

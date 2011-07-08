@@ -1,9 +1,13 @@
 .bundle
 db/*.sqlite3
 log/*.log
+<<<<<<< HEAD
 /tmp/
 doc/
 *.swp
 *~
 .project
 .DS_Store
+=======
+tmp/
+>>>>>>> 373fab6a703446922259cce2900ab30e6896317c

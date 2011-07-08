@@ -1,7 +1,11 @@
 .row
   #crew.section
+<<<<<<< HEAD
     %img{:alt => "Crew", :src => "images/crew_title_03.png"}/
             
+=======
+    %img#crew-title{:alt => "Crew", :src => "images/crew_title_03.png"}/
+>>>>>>> 373fab6a703446922259cce2900ab30e6896317c
     %h2 Instructor - The Code Academy instructor...
     %p Jeff Cohen is an awesome dude that teaches and shit. He published a book.
     %h2 Mentors - Our mentors...
@@ -42,6 +46,7 @@
       %li Claire Lew
       %li Maggie Jim
 
+<<<<<<< HEAD
       - sponsors.each do |sponsor|
         .sponsor{:title => "Click to flip"}
           .sponsorFlip
@@ -51,3 +56,5 @@
               = sponsor[:description]
             .sponsorURL
               = link_to sponsor[:url], sponsor[:url]
+=======
+>>>>>>> 373fab6a703446922259cce2900ab30e6896317c
