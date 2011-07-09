@@ -78,7 +78,6 @@ $(document).ready(function() {
 		//    }
 	});
 });
-<<<<<<< HEAD
 	
 	$(document).ready(function() {
 		$("#cf_onclick").click(function() {
@@ -135,7 +134,6 @@ $(document).ready(function() {
   	});
 
   });
-=======
 
 $(document).ready(function() {
 
@@ -148,4 +146,3 @@ var element = ("#showable-" + $(this).data("target"));
 });
 
 });
->>>>>>> 373fab6a703446922259cce2900ab30e6896317c

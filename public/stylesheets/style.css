@@ -926,7 +926,7 @@ display: none;
 	cursor:pointer;
 }
 
-.sponsorFlip{
+.sponsorFlip  {
 	/*  The sponsor div will be positioned absolutely with respect
 		to its parent .sponsor div and fill it in entirely */
 
