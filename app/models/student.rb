@@ -1,13 +1,14 @@
 class Student < ActiveRecord::Base
-  # def mantra
-  #   base_mantra = "Become a"
-  #   if @mantra.nil?
-  #     base_title
-  #   else
-  #     "#{base_mantra} #{@mantra}"
-  #   end
-  # end
 end
+
+# def mantra
+#   base_mantra = "Become a"
+#   if @mantra.nil?
+#     base_title
+#   else
+#     "#{base_mantra} #{@mantra}"
+#   end
+# end
 
 # class You < CodeAcademy::Chicago
 #   
